@@ -31,6 +31,7 @@ import Profile from "../customer/Components/Auth/Profile";
 import TransactionComponent from "../customer/Components/Checkout/TransactionComponent";
 import { App } from "../customer/Components/App";
 import PrivateRoute from "../customer/Components/PrivateRoute";
+import PromoComponent from "../customer/Components/Navbar/PromoComponent";
 
 const CustomerRoutes = () => {
   const location = useLocation();
@@ -42,8 +43,9 @@ const CustomerRoutes = () => {
   return (
     <div>
       <ThemeProvider theme={customerTheme}>
-        <HeaderTop />
+        <PromoComponent/>
         {showNavigation && <Navigation />}
+        <HeaderTop />
         <Routes>
           <Route path="/sign-in" element={<Login />}></Route>
           <Route path="/sign-up" element={<RegisterPage />}></Route>

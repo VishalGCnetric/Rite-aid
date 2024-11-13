@@ -9,9 +9,9 @@ const HeaderTop = () => {
   return (
     <div className={`p-2 rounded-t-lg flex items-center justify-center align-center ${sharedClasses.bgZinc}`}>
      
-       <FaTruck className="mr-2" />
-      <span className={`${sharedClasses.textZinc} font-semibold`}>Ray-Ban® Official Store India :</span>
-      <a href="#" className={`ml-2 underline ${sharedClasses.textZinc}`}>Free Shipping</a>
+       {/* <FaTruck className="mr-2" /> */}
+      <span className={`${sharedClasses.textZinc} font-semibold`}>$5 off pickup or delivery when you spend $35 on vitamins & supplements: VIT5 </span>
+      <a href="#" className={`ml-2 underline ${sharedClasses.textZinc}`}>Shop Now</a>
     </div>
   );
 };
