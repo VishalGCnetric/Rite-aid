@@ -116,7 +116,7 @@ const PaymentMethod = () => {
             <Button
               variant="contained"
               onClick={handleEditAddress}
-              sx={{ backgroundColor: "#EF4444", color: "white", mt: 2 }}
+              sx={{ backgroundColor: "indigo", color: "white", mt: 2 }}
             >
               Edit
             </Button>
@@ -149,7 +149,7 @@ const PaymentMethod = () => {
         <Button
           variant="contained"
           sx={{
-            backgroundColor: "#EF4444",
+            backgroundColor: "indigo",
             color: "white",
             paddingX: 6,
             paddingY: 2,

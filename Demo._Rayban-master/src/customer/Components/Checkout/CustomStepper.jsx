@@ -12,12 +12,12 @@ const CustomStepper = ({ steps, activeStep }) => {
           <div className=" flex flex-col items-center">
             {index < activeStep ? (
               <CheckCircle
-                className="text-red-500"
+                className="text-indigo-800"
                 style={{ fontSize: 30, marginTop: "25px" }}
               />
             ) : (
               <CircleOutlined
-                className="text-red-500"
+                className="text-indigo-800"
                 style={{ fontSize: 30, marginTop: "25px" }}
               />
             )}

@@ -96,7 +96,7 @@ const CategoryGrid = () => {
           Shop All Categories
         </a>
       </div>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-6 gap-6">
         {categories.map((category) => (
           <div key={category.id} className="flex flex-col items-center text-center">
             <div

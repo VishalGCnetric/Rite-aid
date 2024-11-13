@@ -9,7 +9,7 @@ import CategoryGrid from "../customer/Components/Home/CategoryGrid";
 import AdvertisedProducts from "../customer/Components/Carousel/AdvertiesProduct";
 import { API_BASE_URL } from "../config/api";
 import BannerSlider from "../customer/Components/Home/BannerSlider";
-
+import Carousel from "../customer/Components/Carousel/Carousel"
 const Homepage = () => {
   const [banners, setBanners] = useState();
   const [loading, setLoading] = useState(true);
@@ -70,9 +70,11 @@ const Homepage = () => {
           <div>
             <CategoryGrid />
           </div>
-          <AdvertisedProductsContainer>
+          <div className="my-16 py-10">
+
+         < Carousel text="Advertised Products"/>
+          </div>
             {/* <AdvertisedProducts /> */}
-          </AdvertisedProductsContainer>
           <FlexDiv>
             <Link to="/search">
               {/* <div className="hover">

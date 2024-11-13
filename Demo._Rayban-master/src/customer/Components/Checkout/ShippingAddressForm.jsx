@@ -53,7 +53,7 @@ const ShippingAddressForm = ({ handleNext }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
               <label className="block text-zinc-700">
-                First Name <span className="text-red-600">*</span>
+                First Name <span className="text-indigo-800">*</span>
               </label>
               <input
                 type="text"
@@ -64,7 +64,7 @@ const ShippingAddressForm = ({ handleNext }) => {
                 required
               />
               {errors.firstName && (
-                <p className="text-red-600">{errors.firstName}</p>
+                <p className="text-indigo-600">{errors.firstName}</p>
               )}
             </div>
             <div>
@@ -166,7 +166,7 @@ const ShippingAddressForm = ({ handleNext }) => {
               )}
             </div>
           </div>
-          <button type="submit" className="bg-red-600 text-white p-2 w-full">
+          <button type="submit" className="bg-indigo-600 text-white p-2 w-full">
             NEXT
           </button>
         </form>

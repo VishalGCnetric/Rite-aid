@@ -39,14 +39,15 @@ const AuthForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen min-w-2xl bg-gray-100">
       <div className="bg-white p-6 rounded-md shadow-md max-w-md w-full">
         {/* Logo */}
-        <h2 className="text-center text-2xl font-bold mb-4">RITE AID</h2>
+        {/* <h2 className="text-center text-2xl font-bold mb-4">RITE AID</h2> */}
+        <img src={"https://th.bing.com/th?id=OIP.HOQlpePyyJDb3IN8GuC4rQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"} alt="" className="h-16 item-center mx-auto" />
         
         {/* Form Title */}
         <h3 className="text-center text-xl font-semibold mb-6">
-          {isLogin ? "Sign in to your account" : "Create an account"}
+          {isLogin ? "Sign In" : "Create an account"}
         </h3>
 
         {/* Form */}
@@ -94,7 +95,7 @@ const AuthForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-green-600 text-white py-2 rounded-md font-semibold hover:bg-green-700"
+            className="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700"
           >
             {isLogin ? "Continue" : "Sign Up"}
           </button>

@@ -6,7 +6,7 @@ const SHARED_CLASSES_TEXT = "text-white font-bold";
 
 const PromoComponent = () => {
   return (
-    <div className={`${SHARED_CLASSES_CONTAINER} h-10 bg-blue-600`}>
+    <div className={`${SHARED_CLASSES_CONTAINER} h-10 bg-indigo-800`}>
       <div className="bg-primary flex-col md:flex-row p-4 flex justify-center gap-10 items-center w-full px-32 py-2">
         <p className={`${SHARED_CLASSES_TEXT} text-center md:text-left md:flex-grow`}>
           Get great deals picked just for you with Rite Aid Rewards email and text.

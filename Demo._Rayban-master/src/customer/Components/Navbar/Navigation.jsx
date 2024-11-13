@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiSearch, FiUser, FiShoppingCart, FiMapPin } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -18,6 +19,8 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center gap-1">
+          <Link to="/">
+          
           <motion.img
             src="https://th.bing.com/th?id=OIP.HOQlpePyyJDb3IN8GuC4rQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
             alt="Rite Aid Logo"
@@ -26,6 +29,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1 }}
           />
+          </Link>
           {/* <motion.span
             className="text-lg font-semibold text-blue-800"
             initial={{ opacity: 0 }}
@@ -85,7 +89,7 @@ const Navbar = () => {
           <FiMapPin size={20} />
           <br />
           <span className="text-sm text-gray-600">
-            Your Store <br/><p className="font-semibold ">Select a Store</p>
+            Your Store <br/><p className="font-semibold"><Link to="/">Find a store</Link></p>
           </span>
         </motion.div>
 
@@ -97,7 +101,8 @@ const Navbar = () => {
           <FiUser size={20} />
         
           <span className="text-sm text-gray-600">
-            Hi, Sign In   <br /><p className="font-semibold ml-4">Account</p>
+            Hi, Sign In   <br /><p className="font-semibold "><Link to="/sign-in">Account</Link>
+            </p>
           </span>
         </motion.div>
 
@@ -105,8 +110,9 @@ const Navbar = () => {
         <motion.div
           whileHover={{ scale: 1.1 }}
           className="text-gray-600 cursor-pointer"
-        >
+        ><Link to="/cart">
           <FiShoppingCart size={24} />
+          </Link>
         </motion.div>
       </div>
     </nav>
